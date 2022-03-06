@@ -45,7 +45,7 @@ class Ia:
     
     def generateNoise(self, seuil):
         alreadyUsedIndex = []
-        numberOfPixelsTaken = seuil / len(self.entryVector) * 100
+        numberOfPixelsTaken = seuil / 100 * len(self.entryVector)
         for i in range(int(numberOfPixelsTaken)):
             random_index = random.randint(0,len(self.entryVector)-1)
             if random_index not in alreadyUsedIndex:
